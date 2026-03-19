@@ -9,7 +9,8 @@ from openai import OpenAI
 # 🔐 CONFIG
 # =========================
 DAILY_GOAL = 1800
-client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
+api_key = st.secrets["OPENAI_API_KEY"]
+client = OpenAI(api_key)
 
 FINELI_BASE = "https://fineli.fi/fineli/api/v1"
 
